@@ -1,0 +1,30 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 230px;
+
+  &__name,
+  &__position,
+  &__email,
+  &__phone {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__name {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__position,
+  &__email,
+  &__phone {
+    line-height: 25px;
+  }
+
+  &__position {
+    margin-top: 3px;
+  }
+}
