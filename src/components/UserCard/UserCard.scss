@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 230px;
 
   &__name,
   &__position,
@@ -26,5 +25,12 @@
 
   &__position {
     margin-top: 3px;
+  }
+
+  &__photo {
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
   }
 }

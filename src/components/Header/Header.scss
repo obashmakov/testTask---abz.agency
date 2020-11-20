@@ -38,10 +38,10 @@
     outline: none;
 
     cursor: pointer;
-    transition: transform 300ms;
+    transition: background-color 300ms;
 
     &:hover {
-      transform: scale(1.1);
+      background-color: #b42a1a;
     }
   }
 }

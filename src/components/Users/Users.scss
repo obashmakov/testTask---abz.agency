@@ -1,25 +1,55 @@
 .users {
   &__container {
     margin-top: 125px;
-    height: 1105px;
     background-color: #f9f9f3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
   }
 
   &__title {
-    margin-top: 153px;
+    padding-top: 153px;
     font-size: 50px;
     line-height: 54px;
+    text-align: center;
+  }
+
+  &__details {
+    text-align: center;
   }
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    column-gap: 20px;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    row-gap: 70px;
 
-    margin-top: 63px;
+    margin-top: 80px;
+  }
+
+
+  &__button {
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    width: 211px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #ef5b4c;
+    padding: 5px;
+
+    border-color: transparent;
+    border-radius: 3px;
+    outline: none;
+
+    cursor: pointer;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: #b42a1a;
+    }
+  }
+
+  &__error {
+    text-align: center;
+    color: red;
   }
 }
