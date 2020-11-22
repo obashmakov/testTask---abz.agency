@@ -2,6 +2,9 @@
   &__container {
     margin-top: 125px;
     background-color: #f9f9f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
@@ -17,15 +20,19 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
     row-gap: 70px;
 
-    margin-top: 80px;
+    margin-top: 63px;
   }
 
+  &__button-container {
+    margin-top: 70px;
+  }
 
   &__button {
-    margin-top: 70px;
+    margin-bottom: 160px;
     margin-left: 50%;
     transform: translateX(-50%);
 
@@ -49,6 +56,8 @@
   }
 
   &__error {
+    padding: 0;
+    margin: 0;
     text-align: center;
     color: red;
   }

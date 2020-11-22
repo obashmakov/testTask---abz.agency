@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import './UserCard.scss';
 
 export const UserCard = ({ users }) => (
@@ -27,3 +27,13 @@ export const UserCard = ({ users }) => (
     ))}
   </>
 );
+
+UserCard.propTypes = {
+  users: PropTypes.arrayOf(PropTypes.shape({
+    photo: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+  })).isRequired,
+};

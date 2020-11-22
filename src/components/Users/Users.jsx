@@ -37,19 +37,21 @@ export const Users = () => {
             <UserCard users={users} />
           )}
         </div>
-        <button
-          className="users__button"
-          type="button"
-          onClick={showOtherUsers}
-          disabled={!loadedUsersError}
-        >
-          Show more
-        </button>
-        {!loadedUsersError && (
-          <p className="users__error">
-            All users are loaded
-          </p>
-        )}
+        <div className="users__button-container">
+          {!loadedUsersError && (
+            <p className="users__error">
+              All users are loaded
+            </p>
+          )}
+          <button
+            className="users__button"
+            type="button"
+            onClick={showOtherUsers}
+            disabled={!loadedUsersError}
+          >
+            Show more
+          </button>
+        </div>
       </div>
     </section>
   );
