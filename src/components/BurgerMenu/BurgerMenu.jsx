@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import burger from '../../images/menu.svg';
 import './BurgerMenu.scss';
 
 export const BurgerMenu = ({ setMenu, menu }) => {
@@ -11,7 +12,7 @@ export const BurgerMenu = ({ setMenu, menu }) => {
     <button type="button" className="burger" onClick={toggleMenu}>
       <img
         className="menu__icon"
-        src="/images/menu icon.svg"
+        src={burger}
         alt="menu"
       />
     </button>
