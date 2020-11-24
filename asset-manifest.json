@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/testTask-abz.agency/static/css/main.2434aec1.chunk.css",
+    "main.js": "/testTask-abz.agency/static/js/main.2ef07a5e.chunk.js",
+    "main.js.map": "/testTask-abz.agency/static/js/main.2ef07a5e.chunk.js.map",
+    "runtime-main.js": "/testTask-abz.agency/static/js/runtime-main.95dac479.js",
+    "runtime-main.js.map": "/testTask-abz.agency/static/js/runtime-main.95dac479.js.map",
+    "static/js/2.8de38741.chunk.js": "/testTask-abz.agency/static/js/2.8de38741.chunk.js",
+    "static/js/2.8de38741.chunk.js.map": "/testTask-abz.agency/static/js/2.8de38741.chunk.js.map",
+    "index.html": "/testTask-abz.agency/index.html",
+    "static/css/main.2434aec1.chunk.css.map": "/testTask-abz.agency/static/css/main.2434aec1.chunk.css.map",
+    "static/js/2.8de38741.chunk.js.LICENSE.txt": "/testTask-abz.agency/static/js/2.8de38741.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/testTask-abz.agency/static/media/OpenSans-Regular.1b0809d5.ttf",
+    "static/media/Header.scss": "/testTask-abz.agency/static/media/banner-photo.9614ebc2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95dac479.js",
+    "static/js/2.8de38741.chunk.js",
+    "static/css/main.2434aec1.chunk.css",
+    "static/js/main.2ef07a5e.chunk.js"
+  ]
+}
