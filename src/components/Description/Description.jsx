@@ -1,4 +1,5 @@
 import React from 'react';
+import manLaptop from '../../images/man-laptop-v1.svg';
 import './Description.scss';
 
 export const Description = () => (
@@ -9,7 +10,7 @@ export const Description = () => (
     <div className="description__container">
       <img
         className="description__img"
-        src="/images/man-laptop-v1.svg"
+        src={manLaptop}
         alt="Man with laptop"
       />
       <div className="description__info">

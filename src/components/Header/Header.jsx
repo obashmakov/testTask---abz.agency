@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BurgerMenu } from '../BurgerMenu';
 import { Menu } from '../Menu';
+import logo from '../../images/logo.svg';
 import './Header.scss';
 
 export const Header = () => {
@@ -11,7 +12,7 @@ export const Header = () => {
       <nav className="nav">
         <img
           className="nav_logo"
-          src="/images/logo.svg"
+          src={logo}
           alt="Webpage-logo"
         />
         {menu && (
