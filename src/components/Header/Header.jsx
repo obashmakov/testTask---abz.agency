@@ -22,27 +22,30 @@ export const Header = () => {
         <div className="nav__container">
           <ul className="nav__list list">
             <li className="list__item">
-              <a className="list__link" href="/#">
+              <a className="list__link" href="/testTask-abz.agency/#">
                 About me
               </a>
             </li>
             <li className="list__item">
-              <a className="list__link" href="/#">
+              <a className="list__link" href="/testTask-abz.agency/#">
                 Relationships
               </a>
             </li>
             <li className="list__item">
-              <a className="list__link" href="/#requirements">
+              <a
+                className="list__link"
+                href="/testTask-abz.agency/#requirements"
+              >
                 Requirements
               </a>
             </li>
             <li className="list__item">
-              <a className="list__link" href="/#users">
+              <a className="list__link" href="/testTask-abz.agency/#users">
                 Users
               </a>
             </li>
             <li className="list__item">
-              <a className="list__link" href="/#singup">
+              <a className="list__link" href="/testTask-abz.agency/#singup">
                 Sign Up
               </a>
             </li>
@@ -68,7 +71,7 @@ export const Header = () => {
               We kindly remid you that your test assignment
               should be submitted as a link to github/bitbucket repository.
             </p>
-            <a href="/#singup">
+            <a href="/testTask-abz.agency/#singup">
               <button className="header__button" type="button">
                 Sing up now
               </button>

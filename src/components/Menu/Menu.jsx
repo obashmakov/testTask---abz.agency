@@ -18,7 +18,7 @@ export const Menu = () => (
       if (count % 5 === 0) {
         return (
           <li className="menu__item">
-            <a href="/#" className="menu__link">
+            <a href="/testTask-abz.agency/#" className="menu__link">
               {item}
             </a>
             <hr />
