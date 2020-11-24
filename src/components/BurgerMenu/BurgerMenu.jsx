@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import './BurgerMenu.scss';
 
 export const BurgerMenu = ({ setMenu, menu }) => {
@@ -16,4 +16,9 @@ export const BurgerMenu = ({ setMenu, menu }) => {
       />
     </button>
   );
+};
+
+BurgerMenu.propTypes = {
+  setMenu: PropTypes.func.isRequired,
+  menu: PropTypes.bool.isRequired,
 };
