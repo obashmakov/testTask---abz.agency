@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/testTask-abz.agency/static/css/main.2434aec1.chunk.css",
-    "main.js": "/testTask-abz.agency/static/js/main.4665f955.chunk.js",
-    "main.js.map": "/testTask-abz.agency/static/js/main.4665f955.chunk.js.map",
+    "main.css": "/testTask-abz.agency/static/css/main.f7b88cce.chunk.css",
+    "main.js": "/testTask-abz.agency/static/js/main.265b745a.chunk.js",
+    "main.js.map": "/testTask-abz.agency/static/js/main.265b745a.chunk.js.map",
     "runtime-main.js": "/testTask-abz.agency/static/js/runtime-main.95dac479.js",
     "runtime-main.js.map": "/testTask-abz.agency/static/js/runtime-main.95dac479.js.map",
-    "static/js/2.8de38741.chunk.js": "/testTask-abz.agency/static/js/2.8de38741.chunk.js",
-    "static/js/2.8de38741.chunk.js.map": "/testTask-abz.agency/static/js/2.8de38741.chunk.js.map",
+    "static/js/2.ea343d28.chunk.js": "/testTask-abz.agency/static/js/2.ea343d28.chunk.js",
+    "static/js/2.ea343d28.chunk.js.map": "/testTask-abz.agency/static/js/2.ea343d28.chunk.js.map",
     "index.html": "/testTask-abz.agency/index.html",
-    "static/css/main.2434aec1.chunk.css.map": "/testTask-abz.agency/static/css/main.2434aec1.chunk.css.map",
-    "static/js/2.8de38741.chunk.js.LICENSE.txt": "/testTask-abz.agency/static/js/2.8de38741.chunk.js.LICENSE.txt",
+    "static/css/main.f7b88cce.chunk.css.map": "/testTask-abz.agency/static/css/main.f7b88cce.chunk.css.map",
+    "static/js/2.ea343d28.chunk.js.LICENSE.txt": "/testTask-abz.agency/static/js/2.ea343d28.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/testTask-abz.agency/static/media/OpenSans-Regular.1b0809d5.ttf",
     "static/media/Header.scss": "/testTask-abz.agency/static/media/banner-photo.9614ebc2.jpg",
     "static/media/logo.d190168a.svg": "/testTask-abz.agency/static/media/logo.d190168a.svg",
-    "static/media/man-laptop-v1.bdb026ef.svg": "/testTask-abz.agency/static/media/man-laptop-v1.bdb026ef.svg"
+    "static/media/man-laptop-v1.bdb026ef.svg": "/testTask-abz.agency/static/media/man-laptop-v1.bdb026ef.svg",
+    "static/media/menu.c551a7a2.svg": "/testTask-abz.agency/static/media/menu.c551a7a2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.95dac479.js",
-    "static/js/2.8de38741.chunk.js",
-    "static/css/main.2434aec1.chunk.css",
-    "static/js/main.4665f955.chunk.js"
+    "static/js/2.ea343d28.chunk.js",
+    "static/css/main.f7b88cce.chunk.css",
+    "static/js/main.265b745a.chunk.js"
   ]
 }
