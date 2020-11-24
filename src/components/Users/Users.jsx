@@ -24,7 +24,7 @@ export const Users = () => {
   };
 
   return (
-    <section className="users">
+    <section className="users" id="users">
       <div className="users__container">
         <h1 className="users__title">
           Our cheerful users

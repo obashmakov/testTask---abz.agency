@@ -38,6 +38,7 @@ export const Form = () => {
 
   const submitUser = (event) => {
     event.preventDefault();
+
     createUser(userName, email, phone, positionID, photo);
   };
 
@@ -46,7 +47,7 @@ export const Form = () => {
   };
 
   return (
-    <section className="form">
+    <section className="form" id="singup">
       <div className="form__container">
         <h1 className="form__title">
           Register to get a work
@@ -130,10 +131,9 @@ export const Form = () => {
               className="custom-file-input"
               id="photo"
               onChange={fileSelectedHandler}
-              required
             />
             <label className="custom-file-label" htmlFor="photo">
-              Upload your photo
+              {!photo ? 'Upload your photo' : photo.name}
               <button
                 type="button"
                 className="custom-file-label__btn"
