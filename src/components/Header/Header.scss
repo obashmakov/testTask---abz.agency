@@ -1,0 +1,68 @@
+.header {
+  &__img {
+    height: 600px;
+    background: url(../../images/banner-photo.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  &__heading {
+    padding-top: 108px;
+    padding-left: 30px;
+    color: white;
+    width: 520px;
+    font-size: 25px;
+    line-height: 54px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: white;
+    width: 530px;
+    padding-left: 30px;
+    padding-top: 10px;
+    line-height: 24px;
+  }
+
+  &__button {
+    width: 211px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #ef5b4c;
+    margin-top: 18px;
+    margin-left: 29px;
+    padding: 5px;
+
+    border-color: transparent;
+    border-radius: 3px;
+    outline: none;
+
+    cursor: pointer;
+    transition: transform 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+
+  list-style-type: none;
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 27px;
+    margin-right: 29px;
+  }
+}
+
