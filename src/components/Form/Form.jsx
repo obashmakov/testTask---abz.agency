@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import classNames from 'classnames';
 import { createUser } from '../../api/helpers';
 import { getPositions } from '../../api/positions';
 import './Form.scss';
@@ -10,6 +11,7 @@ export const Form = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [photo, setPhoto] = useState(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     getPositions()
@@ -40,6 +42,16 @@ export const Form = () => {
     event.preventDefault();
 
     createUser(userName, email, phone, positionID, photo);
+
+    if (!userName || !email || !phone || !positionID || !photo) {
+      setError(true);
+    } else {
+      setUserName('');
+      setEmail('');
+      setPhone('');
+      setPhoto(null);
+      setError(false);
+    }
   };
 
   const fileSelectedHandler = (event) => {
@@ -64,9 +76,12 @@ export const Form = () => {
             </p>
             <input
               type="text"
-              className="form__input form-control"
+              className={classNames(
+                `form__input`, { 'form__input--error': error === true },
+              )}
               name="name"
               id="name"
+              value={userName}
               placeholder="Your name"
               onChange={handlerChange}
             />
@@ -78,9 +93,12 @@ export const Form = () => {
             </p>
             <input
               type="text"
-              className="form__input form-control"
+              className={classNames(
+                `form__input`, { 'form__input--error': error === true },
+              )}
               name="email"
               id="email"
+              value={email}
               placeholder="Your email"
               onChange={handlerChange}
             />
@@ -92,9 +110,12 @@ export const Form = () => {
             </p>
             <input
               type="text"
-              className="form__input form-control"
+              className={classNames(
+                `form__input`, { 'form__input--error': error === true },
+              )}
               name="phone"
               id="phone"
+              value={phone}
               placeholder="+380 XX XXX XX XX"
               onChange={handlerChange}
             />
@@ -128,11 +149,16 @@ export const Form = () => {
           <div className="custom-file form__file">
             <input
               type="file"
-              className="custom-file-input"
               id="photo"
               onChange={fileSelectedHandler}
             />
-            <label className="custom-file-label" htmlFor="photo">
+            <label
+              className={classNames(
+                `custom-file-label`,
+                { 'custom-file-label--error': error === true },
+              )}
+              htmlFor="photo"
+            >
               {!photo ? 'Upload your photo' : photo.name}
               <button
                 type="button"

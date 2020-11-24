@@ -28,7 +28,9 @@ export const Description = () => (
           (gulp/webpack) you will get bonus points as well. Slice service
           directory page PSD mockup into HTML5/CSS3.
         </p>
-        <a className="description__link" href="/#singup">Sing up now</a>
+        <a className="description__link" href="/testTask-abz.agency/#singup">
+          Sing up now
+        </a>
       </div>
     </div>
   </section>
