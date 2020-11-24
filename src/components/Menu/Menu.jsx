@@ -8,14 +8,31 @@ const menuItems = [
   'Our news', 'Testimonials', 'Licences', 'Privacy Policy',
 ];
 
+let count = 0;
+
 export const Menu = () => (
   <ul className="menu">
-    {menuItems.map(item => (
-      <li className="menu__item">
-        <a href="/#" className="menu__link">
-          {item}
-        </a>
-      </li>
-    ))}
+    {menuItems.map((item) => {
+      count += 1;
+
+      if (count % 5 === 0) {
+        return (
+          <li className="menu__item">
+            <a href="/#" className="menu__link">
+              {item}
+            </a>
+            <hr />
+          </li>
+        );
+      }
+
+      return (
+        <li className="menu__item">
+          <a href="/#" className="menu__link">
+            {item}
+          </a>
+        </li>
+      );
+    })}
   </ul>
 );

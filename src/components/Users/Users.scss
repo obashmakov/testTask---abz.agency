@@ -32,8 +32,9 @@
   }
 
   &__button {
+    position: relative;
     margin-bottom: 160px;
-    margin-left: 50%;
+    left: 50%;
     transform: translateX(-50%);
 
     width: 211px;
@@ -63,7 +64,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .users {
     &__title {
       font-size: 40px;
@@ -72,6 +73,15 @@
 
     &__cards {
       column-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .users {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

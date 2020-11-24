@@ -63,6 +63,10 @@ export const Header = () => {
               The
               photo has to scale in the banner area on the different screens.
             </p>
+            <p className="header__text-mobile">
+              We kindly remid you that your test assignment
+              should be submitted as a link to github/bitbucket repository.
+            </p>
             <a href="/#singup">
               <button className="header__button" type="button">
                 Sing up now
