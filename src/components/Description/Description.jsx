@@ -2,7 +2,7 @@ import React from 'react';
 import './Description.scss';
 
 export const Description = () => (
-  <section className="description">
+  <section className="description" id="requirements">
     <h2 className="description__title">
       Let&lsquo;s get acquainted
     </h2>
@@ -27,7 +27,7 @@ export const Description = () => (
           (gulp/webpack) you will get bonus points as well. Slice service
           directory page PSD mockup into HTML5/CSS3.
         </p>
-        <a className="description__link" href="/#">Sing up now</a>
+        <a className="description__link" href="/#singup">Sing up now</a>
       </div>
     </div>
   </section>

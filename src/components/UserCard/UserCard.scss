@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  max-width: 260px;
+  position: relative;
 
   &__name,
   &__position,
@@ -9,6 +11,9 @@
   &__phone {
     text-align: center;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__name {
@@ -25,6 +30,30 @@
 
   &__position {
     margin-top: 3px;
+  }
+
+  &__email {
+    cursor: pointer;
+    &--hovered {
+      visibility: hidden;
+      max-width: 300%;
+      background-color: black;
+      color: #fff;
+      border-radius: 6px;
+      padding: 2px 5px;
+      font-size: 12px;
+    
+      position: absolute;
+      left: 0;
+      top: 165px;
+      z-index: 10;
+    }
+  
+    &:hover {
+      .user-card__email--hovered {
+        visibility: visible;
+      }
+    }
   }
 
   &__photo {
